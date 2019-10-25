@@ -33,20 +33,18 @@ public class Car{
 
         double distance = (60 * this.time);
 
-        return ((distance / this.tankSize) * 3.787878);
+        return ((distance / this.tankSize) * 3.785);
     }
 
-    public Bollean fitStandard(String Model, double milage){
+    public Boolean fitStandard(String Model, double milage){
         if (Model.equals("Sedan") && (milage >= 50)){
             return true;
-        }
-        if (Model.equals("SUV") && (milage >= 40)){
+        } else if (Model.equals("SUV") && (milage >= 40)){
             return true;
-        }
-        if (Model.equals("Truck") && (milage >= 30)){
+        } else if (Model.equals("Truck") && (milage >= 30)){
             return true;
+        } else {
+            return false;
         }
-
-        return false;
     }
 }
