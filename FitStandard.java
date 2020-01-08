@@ -21,5 +21,7 @@ public class FitStandard{
         System.out.println(car5.fitStandard(car5.gettype(), car5.calculateGasMilage()));
         System.out.println(car6.getModel() + ": " + car6.calculateGasMilage() + " Miles per gallon.");
         System.out.println(car6.fitStandard(car6.gettype(), car6.calculateGasMilage()));
+        System.out.println(" ");
+        System.out.println("Test");
     }
 }
